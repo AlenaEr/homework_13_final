@@ -1,0 +1,91 @@
+//Services
+.services {
+    padding-top: 50px;
+
+    .container-services {
+        display: flex;
+        padding: 0px 60px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        align-self: stretch;
+    }
+
+    .title-services {
+        color: var(--active-regular, #24A3FF);
+
+        /* H3 / Caps */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .hero {
+        /* Hero / Regular */
+        font-family: Montserrat;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .tab-title {
+        color: var(--active-regular, #24A3FF);
+        /* H3 / Regular */
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .tab-content {
+        color: var(--basic-white, #FFF);
+        /* Paragraph/Regular */
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 стовпці */
+        grid-template-rows: repeat(2, 1fr);
+        /* 2 ряди */
+        grid-gap: 60px;
+        padding-bottom: 60px;
+        /* Відступи між елементами */
+
+        // .icon-wrap img{
+        //     padding-bottom: 30px;
+        // }
+
+        .icon-wrap {
+            // display: flex;
+            display: flex;
+            padding: 14px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 24px;
+            background: #FFF;
+            width: min-content;
+        }
+
+        .tab-title {
+            padding-bottom: 15px;
+            padding-top: 30px;
+        }
+    }
+}

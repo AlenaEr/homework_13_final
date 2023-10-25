@@ -1,0 +1,97 @@
+.publications {
+    background: var(--grey-bg, #F5F5FA);
+    padding-top: 30px;
+    .container-publications {
+        display: flex;
+        padding: 0px 60px 0px 60px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+
+        .team-tabs2 {
+            display: flex;
+            flex-direction: column;
+
+            .team-tabs3 {
+                display: flex;
+                align-items: center;
+
+                .team-title {
+                    color: var(--active-regular, #24A3FF);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+            }
+
+            .team-about {
+                font-family: Montserrat;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .row-publications {
+            display: flex;
+            gap: 30px;
+            width: 32%;
+
+            .publications-item {
+                background-color: white;
+                .icon-wrap-pub {
+                    width: 100%;
+                    padding: 0px 0px;
+                }
+
+                .p-wrapper {
+                    padding: 30px 30px;
+
+                    .date {
+                        color: var(--grey-text, #B3B3BA);
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        padding: 15px 0;
+                    }
+                }
+
+                .tab-title {
+                    color: var(--active-regular, #24A3FF);
+                    /* H3 / Regular */
+                    font-family: Montserrat;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .tab-content {
+                    color: var(--basic-black, #000);
+                    /* Paragraph / Small */
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    /* 157.143% */
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,480 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bg-wrapper {
+  border-radius: 0px 0px 12px 12px;
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  align-self: stretch;
+  box-shadow: 0 10px 10px #CACADB, 0 -10px 10px #eb35be;
+}
+
+.header {
+  font-family: "Montserrat";
+  color: #FFF;
+  background: url("../images/bigh.png") no-repeat 50% 50%;
+  background-size: auto 100%;
+}
+.header .nav a {
+  color: white;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.header .container h1 {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+}
+.header .container .header-desktop {
+  display: flex;
+  padding: 50px 60px 0px 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.header .container .header-desktop .logo {
+  display: flex;
+  width: 130px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6.501px;
+}
+.header .container .header-desktop .header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+.header .container .header-desktop .header-right .contact {
+  display: flex;
+  align-items: center;
+}
+.header .container .header-desktop .header-right .contact .language-option {
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 5px 7px;
+  border-radius: 8px;
+  background: #F0145A;
+  text-transform: uppercase;
+}
+.header .container .header-desktop .header-right .phone {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.header .container .header-desktop .header-right .dot {
+  margin: 0 6px;
+}
+
+.services {
+  padding-top: 50px;
+}
+.services .container-services {
+  display: flex;
+  padding: 0px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  align-self: stretch;
+}
+.services .title-services {
+  color: var(--active-regular, #24A3FF);
+  /* H3 / Caps */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.services .hero {
+  /* Hero / Regular */
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services .tab-title {
+  color: var(--active-regular, #24A3FF);
+  /* H3 / Regular */
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.services .tab-content {
+  color: var(--basic-white, #FFF);
+  /* Paragraph/Regular */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+}
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 стовпці */
+  grid-template-rows: repeat(2, 1fr);
+  /* 2 ряди */
+  grid-gap: 60px;
+  padding-bottom: 60px;
+  /* Відступи між елементами */
+}
+.services .row .icon-wrap {
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  background: #FFF;
+  width: -moz-min-content;
+  width: min-content;
+}
+.services .row .tab-title {
+  padding-bottom: 15px;
+  padding-top: 30px;
+}
+
+.about-us {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.about-us .container-about {
+  display: flex;
+  padding: 0px 180px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.about-us .container-about .flx-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+  padding-bottom: 60px;
+}
+.about-us .container-about .flx-wrapper .raw {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+}
+.about-us .container-about .flx-wrapper .tabs-text {
+  color: var(--grey-text, #B3B3BA);
+  text-align: right;
+  /* Hero / Regular */
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-us .container-about .flx-wrapper .point-title {
+  color: var(--basic-white, #FFF);
+  /* H2 / Regular */
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-us .container-about .flx-wrapper .point-description {
+  color: var(--basic-white, #FFF);
+  /* Introduction */
+  font-family: Montserrat;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 157.895% */
+}
+
+.team {
+  display: flex;
+  padding: 60px 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+.team .team-container {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 12px;
+  background: var(--grey-bg, #F5F5FA);
+}
+.team .team-container .tabs-content .team-tabs-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.team .team-container .tabs-content .team-tabs-item.active {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+.team .team-container .tabs-content .team-tabs-item .team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding-left: 20px;
+}
+.team .team-container .tabs-content .team-tabs-item .team-content .team-tabs2 {
+  display: flex;
+  flex-direction: column;
+}
+.team .team-container .tabs-content .team-tabs-item .team-content .team-tabs2 .team-tabs3 {
+  display: flex;
+  align-items: center;
+}
+.team .team-container .tabs-content .team-tabs-item .team-content .team-tabs2 .team-about {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team .team-container .tabs-content .front-foto {
+  width: 400px;
+  border-radius: 12px 0px 0px 12px;
+}
+.team .team-container .tabs-content .team-title {
+  color: var(--active-regular, #24A3FF);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team .team-container .tabs-content .team-tabs4 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 30px;
+}
+.team .team-container .tabs-content .team-tabs4 .team-name {
+  color: var(--grey-text, #B3B3BA);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.team .team-container .tabs-content .team-tabs4 .team-role {
+  color: var(--grey-text, #B3B3BA);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.team .team-container .tabs {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.team .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container-client h3 {
+  color: var(--main-regular, #323264);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container-client .grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+.container-client .grid-item {
+  background-color: #fff;
+  text-align: center;
+}
+.container-client .grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.publications {
+  background: var(--grey-bg, #F5F5FA);
+  padding-top: 30px;
+}
+.publications .container-publications {
+  display: flex;
+  padding: 0px 60px 0px 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+.publications .container-publications .team-tabs2 {
+  display: flex;
+  flex-direction: column;
+}
+.publications .container-publications .team-tabs2 .team-tabs3 {
+  display: flex;
+  align-items: center;
+}
+.publications .container-publications .team-tabs2 .team-tabs3 .team-title {
+  color: var(--active-regular, #24A3FF);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.publications .container-publications .team-tabs2 .team-about {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.publications .container-publications .row-publications {
+  display: flex;
+  gap: 30px;
+  width: 32%;
+}
+.publications .container-publications .row-publications .publications-item {
+  background-color: white;
+}
+.publications .container-publications .row-publications .publications-item .icon-wrap-pub {
+  width: 100%;
+  padding: 0px 0px;
+}
+.publications .container-publications .row-publications .publications-item .p-wrapper {
+  padding: 30px 30px;
+}
+.publications .container-publications .row-publications .publications-item .p-wrapper .date {
+  color: var(--grey-text, #B3B3BA);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.publications .container-publications .row-publications .publications-item .tab-title {
+  color: var(--active-regular, #24A3FF);
+  /* H3 / Regular */
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.publications .container-publications .row-publications .publications-item .tab-content {
+  color: var(--basic-black, #000);
+  /* Paragraph / Small */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* 157.143% */
+}/*# sourceMappingURL=app.css.map */
